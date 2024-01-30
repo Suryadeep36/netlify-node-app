@@ -9,3 +9,5 @@ router.get("/hello", (req, res) => {
 })
 
 api.use("/api/",router);
+
+export const handler = serverless(api);
