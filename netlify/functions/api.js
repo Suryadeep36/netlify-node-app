@@ -5,7 +5,7 @@ const api = express();
 
 const router = express.Router();
 router.get("/hello", (req, res) => {
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "../../index.html")
 })
 
 api.use("/api/",router);
