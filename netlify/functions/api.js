@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/hello", (req, res) => {
     res.send("Hello World")
 })
-api.use(expess.static(path.join(__dirname, 'public')));
+api.use(express.static(path.join(__dirname, 'public')));
 api.get("*",(req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
